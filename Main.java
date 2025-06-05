@@ -6,8 +6,6 @@ public class Main
 {
     public static void main(String[] args)
     {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         String nombre;
@@ -46,7 +44,5 @@ public class Main
         // A futuro cuando este:
         // Cliente cliente = new Cliente(nombre, apellido, sexo, salario, montoDelPrestamo);
 
-        System.out.println("Introduzca el nombre del cliente");
-        System.out.println("Introduzca el apellido del cliente");
     }
 }
