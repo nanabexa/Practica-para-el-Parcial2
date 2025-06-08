@@ -29,16 +29,18 @@ public class Main
             System.out.println("Introduzca el monto de del prestamo");
             montoDelPrestamo = Double.parseDouble(bufferedReader.readLine());
 
-        } catch (NumberFormatException e)
+        }
+        catch (NumberFormatException e)
         {
             System.out.println("El dato introducido no es un número");
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             System.out.println("Hubo algun tipo de error");
         }
 
-        // A futuro cuando este:
         Cliente cliente = new Cliente(nombre, sexo, salario, montoDelPrestamo);
+
 
     }
 }

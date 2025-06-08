@@ -1,10 +1,12 @@
-public class Cliente {
+public class Cliente
+{
     String nombre;
     String sexo;
     double salario;
     double montoPrestamo;
 
-    public Cliente(String nombre, String sexo, double salario, double montoPrestamo) {
+    public Cliente(String nombre, String sexo, double salario, double montoPrestamo)
+    {
         this.nombre = nombre;
         this.sexo = sexo;
         this.salario = salario;
@@ -12,30 +14,38 @@ public class Cliente {
     }
 
     //Metodos getters
-    public String getNombre() {
+    public String getNombre()
+    {
         return nombre;
     }
-    public String getSexo() {
+    public String getSexo()
+    {
         return sexo;
     }
-    public double getSalario() {
+    public double getSalario()
+    {
         return salario;
     }
-    public double getMontoPrestamo() {
+    public double getMontoPrestamo()
+    {
         return montoPrestamo;
     }
 
     //Metodos setters
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre)
+    {
         this.nombre = nombre;
     }
-    public void setSexo(String sexo) {
+    public void setSexo(String sexo)
+    {
         this.sexo = sexo;
     }
-    public void setSalario(double salario) {
+    public void setSalario(double salario)
+    {
         this.salario = salario;
     }
-    public void setMontoPrestamo(double montoPrestamo) {
+    public void setMontoPrestamo(double montoPrestamo)
+    {
         this.montoPrestamo = montoPrestamo;
     }
 
