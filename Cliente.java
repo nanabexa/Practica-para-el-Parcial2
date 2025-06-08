@@ -1,42 +1,42 @@
 public class Cliente {
-    String nombreCliente;
-    String sexoCliente;
-    double salarioCliente;
-    double montoPrestamoCliente;
+    String nombre;
+    String sexo;
+    double salario;
+    double montoPrestamo;
 
-    public Cliente() {
-        this.nombreCliente = "";
-        this.sexoCliente = "";
-        this.salarioCliente = 0.0;
-        this.montoPrestamoCliente = 0.0;
+    public Cliente(String nombre, String sexo, double salario, double montoPrestamo) {
+        this.nombre = nombre;
+        this.sexo = sexo;
+        this.salario = salario;
+        this.montoPrestamo = montoPrestamo;
     }
 
     //Metodos getters
-    public String getNombreCliente() {
-        return nombreCliente;
+    public String getNombre() {
+        return nombre;
     }
-    public String getSexoCliente() {
-        return sexoCliente;
+    public String getSexo() {
+        return sexo;
     }
-    public double getSalarioCliente() {
-        return salarioCliente;
+    public double getSalario() {
+        return salario;
     }
-    public double getMontoPrestamoCliente() {
-        return montoPrestamoCliente;
+    public double getMontoPrestamo() {
+        return montoPrestamo;
     }
 
     //Metodos setters
-    public void setNombreCliente(String nombreCliente) {
-        this.nombreCliente = nombreCliente;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-    public void setSexoCliente(String sexoCliente) {
-        this.sexoCliente = sexoCliente;
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
-    public void setSalarioCliente(double salarioCliente) {
-        this.salarioCliente = salarioCliente;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
-    public void setMontoPrestamoCliente(double montoPrestamoCliente) {
-        this.montoPrestamoCliente = montoPrestamoCliente;
+    public void setMontoPrestamo(double montoPrestamo) {
+        this.montoPrestamo = montoPrestamo;
     }
 
 
