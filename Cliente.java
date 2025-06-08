@@ -32,21 +32,52 @@ public class Cliente
     }
 
     //Metodos setters
-    public void setNombre(String nombre)
+    public void setNombre(String nombre) throws IllegalArgumentException
     {
-        this.nombre = nombre;
+        if (nombre.matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+"))
+        {
+            this.nombre = nombre;
+        }
+        else
+        {
+            throw new IllegalArgumentException();
+        }
     }
-    public void setSexo(String sexo)
+    public void setSexo(String sexo) throws IllegalArgumentException
     {
-        this.sexo = sexo;
+        sexo = sexo.trim().toLowerCase();
+
+        // Aquí recordar verificar esto si funciona.
+        if (sexo.matches("hombre|mujer"))
+        {
+            this.sexo = sexo;
+        }
+        else
+        {
+            throw new IllegalArgumentException();
+        }
     }
-    public void setSalario(double salario)
+    public void setSalario(double salario) throws NumberFormatException
     {
-        this.salario = salario;
+        if (salario > 0)
+        {
+            this.salario = salario;
+        }
+        else
+        {
+            throw new NumberFormatException();
+        }
     }
-    public void setMontoPrestamo(double montoPrestamo)
+    public void setMontoPrestamo(double montoPrestamo) throws NumberFormatException
     {
-        this.montoPrestamo = montoPrestamo;
+        if (montoPrestamo > 0)
+        {
+            this.montoPrestamo = montoPrestamo;
+        }
+        else
+        {
+            throw new NumberFormatException();
+        }
     }
 
 
