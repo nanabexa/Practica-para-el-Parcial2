@@ -1,10 +1,10 @@
-public class Clientes {
+public class Cliente {
     String nombreCliente;
     String sexoCliente;
     double salarioCliente;
     double montoPrestamoCliente;
 
-    public Clientes() {
+    public Cliente() {
         this.nombreCliente = "";
         this.sexoCliente = "";
         this.salarioCliente = 0.0;

@@ -15,19 +15,24 @@ public class Main
         double montoDelPrestamo;
 
         System.out.println("Solicitud de Prestamo");
+        System.out.println("Solicitud de Prestamo del Cliente:");
 
         try
         {
             System.out.println("Introduzca el nombre del cliente");
+            System.out.println("Introduzca el nombre del cliente:");
             nombre = bufferedReader.readLine();
 
             System.out.println("Introduzca el apellido del cliente");
+            System.out.println("Introduzca el apellido del cliente:");
             apellido = bufferedReader.readLine();
 
             System.out.println("Introduzca el sexo del cliente");
+            System.out.println("Introduzca el sexo del cliente:");
             sexo = bufferedReader.readLine();
 
             System.out.println("Introduzca el apellido del cliente");
+            System.out.println("Introduzca el apellido del cliente:");
             salario = Double.parseDouble(bufferedReader.readLine());
 
             System.out.println("Introduzca el monto de del prestamo");
@@ -42,7 +47,6 @@ public class Main
         }
 
         // A futuro cuando este:
-        // Cliente cliente = new Cliente(nombre, apellido, sexo, salario, montoDelPrestamo);
 
     }
 }
