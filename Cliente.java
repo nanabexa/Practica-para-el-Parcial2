@@ -48,7 +48,7 @@ public class Cliente
         sexo = sexo.trim().toLowerCase();
 
         // Aquí recordar verificar esto si funciona.
-        if (sexo.matches("hombre|mujer"))
+        if (sexo.matches("(hombre)|(mujer)"))
         {
             this.sexo = sexo;
         }

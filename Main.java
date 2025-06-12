@@ -20,10 +20,11 @@ public class Main
             System.out.println("Introduzca el nombre del cliente:");
             nombre = bufferedReader.readLine();
 
-            System.out.println("Introduzca el sexo del cliente:");
+            System.out.println("Introduzca el sexo del cliente");
+            System.out.println("Tiene que escribir \"hombre\" o \"mujer\"");
             sexo = bufferedReader.readLine();
 
-            System.out.println("Introduzca el apellido del cliente:");
+            System.out.println("Introduzca el salario del cliente:");
             salario = Double.parseDouble(bufferedReader.readLine());
 
             System.out.println("Introduzca el monto de del prestamo");
